@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  font-family: sans-serif;
+}
+.container {
+  max-width: 1760px;
+  margin: auto;
+  padding: 0 30px;
+}
+.testimonial-section {
+  background-color: #111;
+  color: white;
+}
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 60px 80px;
+  font-size: 35px;
+}
+.row {
+  border: 1px solid #333;
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+.slide {
+  display: none;
+  animation: transition 1s ease;
+}
+.slide.active {
+  display: block;
+}
+@keyframes transition {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.testimonial-text {
+  max-width: 500px;
+  margin: auto;
+  line-height: 25px;
+  font-weight: 200;
+  font-size: 18px;
+}
+.job-title {
+  color: #11bead;
+}
+.pagination {
+  text-align: center;
+  margin: 20px 0;
+}
+.pagination img {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 0 15px;
+  opacity: 0.6;
+  transition: 0.5s ease border-color;
+}
+.pagination img.active {
+  border-color: #11bead;
+  opacity: 1;
+}
